@@ -1,0 +1,186 @@
+
+@charset "utf-8";
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+	 *{
+	font-family: 'Noto Sans KR', sans-serif;
+	 box-sizing:border-box;
+	 margin:0; outline:0;}
+
+
+/*탑박스-----------------------------------------------------------------------------------------------*/
+#topbox{
+    width:100%; height:80px; background: #bdd5cb; position:fixed; top:-80px; left:0; transition:.5s;
+    z-index:1;
+}
+#logotop{width:240px; float:right; margin-top:10px;}
+
+#menubar{float:left; margin: 15px; font-size:2rem; border:none; padding:0 20px;
+background:#bdd5cb; color:white; cursor:pointer;}
+.icon{transition:.7s;}
+#menubar:hover .icon{transform: rotate(90deg);}
+
+/*왼쪽 박스----------------------------------------------------------------------------------------------*/
+
+#leftbox{
+  position:fixed; top:0; left:0; width:200px; height:100%;
+    background-color: #bdd5cb; transition:.5s; z-index:9; 
+}
+#logo img{ width:180px;  height:40px; margin: 20px 10px; }
+
+#navi{margin-top:100px;}
+#menu{ list-style:none; padding:0; }
+.list{ text-align:center; padding:10px 0; transition:.5s;  }
+.list:hover { background:white;}
+.list:hover a{color:#bdd5cb;}
+
+.list a{text-decoration: none; color:white; font-size:1.3rem; cursor:pointer; transition:.5s; }
+
+#leftclose{position:fixed;top:0;left:-200px; border:none; color:#8f9598; background:transparent;
+font-size:2rem; cursor:pointer;  transition:0.5s;}
+
+/*오른쪽박스-----------------------------------------------------------------------------------------------*/
+
+#rightbox{
+    margin-left: 240px;
+}
+h1{ font-size: 4rem; margin-top: 80px; margin-bottom: 10px;}
+#sec1 h2{margin-top:0;}
+h2{ font-size: 3rem; margin-bottom: 60px; margin-top: 60px; color:#bdd5cb; position:relative;}
+h2::after {position:absolute; bottom:-15px; left:0; width:8%; height:7px;
+content:''; background:#bdd5cb; border-radius: 30px;}
+
+#imagebox{
+    list-style:none; padding:0; display:flex; flex-wrap: wrap; 
+}
+.imagelist{ width: calc((99% - 40px)/3); margin-right: 20px; }
+.imagelist:nth-child(3n) {margin-right: 0;}
+.imagelist:nth-child(2n-1) {margin-bottom: 10px;}
+.imagelist img{width:100%; display:block; cursor:pointer;} 
+
+/*모달창----------------------------------------------------------------------------------------------------*/
+#modal{
+    position:fixed; top:0; left:0; background:rgba(0,0,0,.5); width:100%; height:100%;
+    /*모달창 가운데맞춤*/
+    display:flex; justify-content: center; align-items: center; display:none; z-index: 9;
+    animation: modal .7s both; 
+}
+#modalcontents{
+    width:95%; max-width: 700px;
+}
+#modalimg{
+    width:100%; display:block;
+}
+#modalcaption{
+    color:white; text-align: center; font-size: 1.5rem; margin-top: 20px; 
+}
+#close{
+    position: absolute; top:0;right:0; background:transparent; color:white;
+    font-size:3rem; cursor:pointer; border:none;
+}
+
+@keyframes modal{
+    from{opacity:0;} to{opacity:1}
+}
+
+
+/*sec2------------------------------------------------------------------------------------------------------*/
+p { font-size:1.1rem; text-align:justify; padding-right: 20px;}
+
+/*sec3------------------------------------------------------------------------------------------------------*/
+#sec3 h4{ margin:20px 0; font-size:1.2rem;}
+#designerbox{list-style:none; padding:0;  display:flex; flex-wrap: wrap;}
+.designers{ width:calc((99% - 20px)/3); margin-right:10px; opacity: 0;}
+.designers:last-child {margin-right: 0;}
+.designers img{width:100%; display:block;}
+
+#caption{width:100%; background:#eaecea; padding:10px;}
+#caption h3{font-size:1.4rem; margin-bottom: 10px;}
+#caption p{font-size:1rem; text-align: left; margin-top: 10px;}
+
+
+.ani1{animation: dhls 2s both }
+.ani2{animation: dh 2s  both }
+.ani3{animation: alx 2s both }
+
+
+@keyframes dhls {
+    from{transform: translateX(-20%); opacity: 0;}
+    to{transform: translateX(0); opacity:1;}
+}
+
+@keyframes dh {
+    from{transform: translateX(20%); opacity: 0;}
+    to{transform: translateX(0); opacity:1;}
+}
+
+@keyframes alx{
+    from{transform: translateY(20%); opacity: 0;}
+    to{transform: translateY(0); opacity: 1;}
+}
+
+
+/*sec4------------------------------------------------------------------------------------------------------*/
+#sec4 ul{list-style: none; padding:0}
+#packagebox{ 
+    margin-top:30px; display: flex; flex-wrap: wrap; justify-content: space-between;
+    margin-right:10px;
+}
+.package{
+    width:49%; 
+}
+.packagein > li {
+    background:#eaecea; padding:20px; text-align: center; border-bottom: 1px solid #c9cbcb;
+}
+.packagein > li:first-child {
+    font-size:2rem; 
+    padding:30px;
+}
+.title1{background:#8f9598 !important; color:white;}
+.title2{background:	#bdd5cb !important; color:white;}
+
+.packagein button{
+    border:none; font-size: 1.4rem; background:white; padding: 10px; cursor:pointer; transition:.3s;
+    border-radius: 10px;
+}
+.packagein button:hover{background:black !important; color:white }
+.button2{background:#bdd5cb !important; color:white;}
+
+/*sec5------------------------------------------------------------------------------------------------------*/
+#sec5 p{
+    font-size: 1.3rem; margin:10px 0;
+}
+#sec5 input{
+    width:98%; padding:10px;
+}
+.send{ margin: 20px 0; width:200px; padding:10px; float:right; margin-right: 2%; transition:.3s;
+background:#bdd5cb; border:none; border-radius: 10px; color:white; cursor:pointer;
+font-size:1.3rem;}
+.send:hover{background:black; }
+
+
+#scrollbutton { position: fixed; bottom: 20px; right:20px; font-size: 2rem; width:60px; line-height:60px;
+text-align: center; background:#bdd5cb; border:none; border-radius: 50%; color:white; cursor: pointer;
+box-shadow: 0 0 10px white;
+}
+
+
+/*반응형------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:500px) {
+    
+    /*위쪽 박스를 화면 안으로 이동*/
+    #topbox{top:0;}
+    
+    /*왼쪽 박스를 화면 바깥으로 보내기*/
+    #leftbox{left:-100%;}
+    #rightbox{margin-left:3%;}
+    .imagelist{width:50%; margin-right:0; padding-right: 10px;}
+
+    .designers{width:100%; margin-right: 0; margin-bottom: 10px; padding-right: 10px;}
+    
+}
+
+
+
+

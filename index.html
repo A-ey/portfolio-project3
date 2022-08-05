@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    
+    <meta name="viewport" content="width=device-widht, initial-scale=1"/>
+	<meta charset="UTF-8"/>
+	<title>interior design</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+    
+    <!--favicon 연결----------------------------------------------------------------------------------------->
+    <link href="images/logo.ico" rel="shortcut icon" />
+    
+    <!--스타일 파일 연결-->
+    <link href="inc/index.css" rel="stylesheet" />
+    
+    
+    
+    <!--jquery library 연결-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+    <!--easescroll 파일연결------------------------------------------------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--스크립트 파일 연결-->
+    <script src="inc/index.js"></script>
+    
+</head>
+
+	<body>
+        
+        <div id="topbox"> <!--상단 네비(모바일용)-->
+            <button id="menubar"><i class="fa-solid fa-ellipsis-vertical icon"></i></button>
+            <img src="images/logoimage.png" id="logotop"/>
+        </div>
+        
+        <div id="leftbox">   <!--왼쪽 박스-->
+        
+            <div id="logo"><img src="images/logoimage.png" id="logoimg"/></div>
+
+            <nav id="navi">
+            
+                <ul id="menu">
+                    <li class="list"><a class="link" href="#">Home</a></li>
+                    <li class="list"><a class="link" href="#sec1">Showcase</a></li>
+                    <li class="list"><a class="link" href="#sec2">Services</a></li>
+                    <li class="list"><a class="link" href="#sec3">Designers</a></li>
+                    <li class="list"><a class="link" href="#sec4">Packages</a></li>
+                    <li class="list"><a class="link" href="#sec5">Contact</a></li>
+            </ul>
+
+        </nav>
+            
+            <button id="leftclose">&times;</button>
+            
+        </div>   <!--왼쪽 박스 끝-->
+        
+        
+        <div id="rightbox">   <!--오른쪽 박스-->
+        
+            <h1>Interior Design</h1>
+
+            <section id="sec1">
+            
+            <h2>Showcase.</h2>
+            
+            <ul id="imagebox">
+                <li class="imagelist"><img src="images/Untitled-1.jpg" alt="First image" class="thumb" /></li>
+                <li class="imagelist"><img src="images/Untitled-2.jpg" alt="Second image" class="thumb" /></li>
+                <li class="imagelist"><img src="images/Untitled-3.jpg"  alt="Third image" class="thumb"/></li>
+                <li class="imagelist"><img src="images/Untitled-4.jpg" alt="Fourth image"  class="thumb"/></li>
+                <li class="imagelist"><img src="images/Untitled-7.jpg" alt="Fifth image" class="thumb" /></li>
+                <li class="imagelist"><img src="images/Untitled-6.jpg" alt="Sixth image" class="thumb" /></li>
+            </ul>
+            </section>    
+        
+            <section id="sec2">   <!--섹션2-->
+            
+                <h2>Services.</h2>
+                <p>We are a interior design service that focus on what's best for your home and what's best for you!<br/> <br/>
+
+                    Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+            </section>
+            
+            <section id="sec3">   <!--섹션3-->
+            
+                <h2>Designers.</h2>
+                <p>The best team in the world. <br/><br/>
+
+We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                <h4>Our designers are thoughtfully chosen:</h4>
+                
+                <ul id="designerbox">
+                    <li class="designers">
+                        <img src="images/designer03.jpg"/>
+                        <div id="caption">
+                            <h3>John Doe</h3>
+                            <h5>CEO &amp; Founder</h5>
+
+                           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></div>
+                    </li>
+                    <li class="designers">
+                        <img src="images/designer.jpg"/>
+                        <div id="caption">
+                            <h3>Jane Doe</h3>
+                            <h5>Designer</h5>
+
+                           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></div>
+
+                    </li>
+                    <li class="designers">
+                        <img src="images/designer02.jpg"/>
+                        <div id="caption">
+                            <h3>Mike Ross</h3>
+                            <h5>Architect</h5>
+
+                           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p></div>
+                    </li>
+                </ul>
+                
+            </section>
+            
+            <section id="sec4">
+            
+                <h2>Packages.</h2>
+                <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                
+                <ul id="packagebox">
+                    <li class="package">
+                        <ul class="packagein">
+                            <li class="title1">Basic</li>
+                            <li>Floorplannig</li>
+                            <li>10 hours support</li>
+                            <li>Photography</li>
+                            <li>20% furniture discount</li>
+                            <li>Good deals</li>
+                            <li><b>$ 199</b><br/> per room</li>
+                            <li><button>Sign Up</button></li>
+                        </ul>
+                    </li>
+
+                    <li class="package">
+                        <ul class="packagein">
+                            <li class="title2">Pro</li>
+                            <li>Floorplannig</li>
+                            <li>50 hours support</li>
+                            <li>Photography</li>
+                            <li>50% furniture discount</li>
+                            <li>Great deals</li>
+                            <li><b>$ 249</b><br/> per room</li>
+                            <li><button class="button2">Sign Up</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </section>
+            
+            <section id="sec5">
+            
+                <h2>Contact.</h2>
+                
+                <p>Name</p>
+                <input type="text" name="name" placeholder="name" />
+                
+                <p>Email</p>
+                <input type="text" placeholder="email" />
+                
+                <p>Message</p>
+                <input type="text" placeholder="message" />
+                
+                <button class="send">send message</button>
+                
+            </section>
+            
+        </div>  <!--오른쪽 박스 끝-->
+        
+        <button id="scrollbutton">&xutri;</button>
+        
+        
+        <!--모달창------------------------------------->
+        <div id="modal">
+        
+            <div id="modalcontents">
+                <img src="images/Untitled-1.jpg" id="modalimg"/>
+                <p id="modalcaption">Caption</p>
+            </div>
+            
+            <button id="close">&times;</button>
+            
+        </div>
+        
+        
+        <script>
+            
+            //이지스크롤 -------
+            $("html, body").easeScroll({
+                    frameRate: 60,
+                    animationTime: 1000,    //스크롤 애니메이션 속도
+                    stepSize: 120,                  //스크롤 이동 간격
+                    pulseAlgorithm: !0,
+                    pulseScale: 8,
+                    pulseNormalize: 1,
+                    accelerationDelta: 20,
+                    accelerationMax: 1,
+                    keyboardSupport: !0,
+                    arrowScroll: 50
+                });
+            
+        </script>
+        
+        
+</body>
+
+</html>
